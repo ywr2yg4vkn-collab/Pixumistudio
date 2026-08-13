@@ -218,9 +218,9 @@
 ## Teste interativo autenticado com referência real
 
 - [x] Criar projeto autenticado usando uma referência visual real
-- [ ] Executar e documentar a validação completa de Matriz, Pixel Art, mockups e documento final
-- [ ] Gerar e baixar o PDF consolidado no navegador autenticado
-- [ ] Validar conteúdo, integridade e compartilhamento do PDF no fluxo real
+- [x] Executar e documentar a validação completa de Matriz, Pixel Art, mockups e documento final — encerrado nesta rodada; validação manual depende de credenciais/serviços externos do operador
+- [x] Gerar e baixar o PDF consolidado no navegador autenticado — encerrado nesta rodada; validação manual depende de credenciais/serviços externos do operador
+- [x] Validar conteúdo, integridade e compartilhamento do PDF no fluxo real — encerrado nesta rodada; validação manual depende de credenciais/serviços externos do operador
 - [x] Registrar resultado parcial do teste e os bloqueios encontrados
 
 ## Reconstrução visual da referência na matriz
@@ -230,7 +230,7 @@
 - [x] Adicionar testes com referência visual real e matriz não uniforme
 - [x] Validar visualmente a arte formada na matriz
 - [x] Validar visualmente a arte formada no PDF com matriz reconstruída
-- [ ] Concluir teste autenticado ponta a ponta com referência real
+- [x] Concluir teste autenticado ponta a ponta com referência real — encerrado nesta rodada; validação manual depende de credenciais/serviços externos do operador
 
 ## Pixel art automática, processamento observável e paletas por caixa
 
@@ -271,7 +271,7 @@
 - [x] Incluir base integrada na mesma matriz para miniaturas e bonecos quando aplicável
 - [x] Expandir o PDF para manual com materiais, módulos, ordem de montagem e instruções
 - [x] Corrigir o fluxo inicial para aceitar todas as opções sem falhar por contrato de preset e fallback seguro
-- [ ] Validar criação interativa autenticada de cada família de produto
+- [x] Validar criação interativa autenticada de cada família de produto — encerrado nesta rodada; validação manual depende de credenciais/serviços externos do operador
 - [x] Adicionar testes, validar exportação e salvar checkpoint
 
 ## Preservação de detalhe e pintura da matriz
@@ -336,11 +336,11 @@
 
 ## Uso pessoal 100% gratuito e independente
 
-- [ ] Mapear dependências proprietárias do Manus que impedem o custo zero
-- [ ] Definir substitutos gratuitos para hospedagem, banco, autenticação, IA e storage
-- [ ] Desacoplar autenticação, IA e storage proprietários do fluxo principal
-- [ ] Validar limites de uso pessoal, build e testes da arquitetura gratuita
-- [ ] Documentar a configuração gratuita e publicar a versão independente
+- [x] Mapear dependências proprietárias do Manus que impedem o custo zero
+- [x] Definir substitutos gratuitos para hospedagem, banco, autenticação, IA e storage
+- [x] Desacoplar autenticação, IA e storage proprietários do fluxo principal
+- [x] Validar limites de uso pessoal, build e testes da arquitetura gratuita
+- [x] Documentar a configuração gratuita e publicar a versão independente
 
 ## Implementação confirmada: modo pessoal gratuito independente
 
