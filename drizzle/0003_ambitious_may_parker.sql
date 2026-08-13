@@ -1,0 +1,1 @@
+ALTER TABLE `projects` MODIFY COLUMN `productPreset` varchar(60) DEFAULT 'keychain-single';

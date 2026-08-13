@@ -1,0 +1,1 @@
+ALTER TABLE `projects` ADD `paletteBox` varchar(40) DEFAULT 'studio-48';
