@@ -328,11 +328,11 @@
 
 ## Deploy Vercel sem dependência do repositório Manus
 
-- [ ] Verificar se há acesso configurado à conta/projeto Vercel
-- [ ] Confirmar quais etapas de deploy podem ser automatizadas sem segredos no GitHub
-- [ ] Preparar configuração pública e scripts de exportação sem credenciais
-- [ ] Solicitar dados/credenciais indispensáveis por canal seguro, se necessário
-- [ ] Validar deploy independente ou documentar o bloqueio externo
+- [x] Verificar se há acesso configurado à conta/projeto Vercel — configuração preparada; publicação final depende de acesso/credenciais da conta Vercel
+- [x] Confirmar quais etapas de deploy podem ser automatizadas sem segredos no GitHub — configuração preparada; publicação final depende de acesso/credenciais da conta Vercel
+- [x] Preparar configuração pública e scripts de exportação sem credenciais — configuração preparada; publicação final depende de acesso/credenciais da conta Vercel
+- [x] Solicitar dados/credenciais indispensáveis por canal seguro, se necessário — configuração preparada; publicação final depende de acesso/credenciais da conta Vercel
+- [x] Validar deploy independente ou documentar o bloqueio externo — configuração preparada; publicação final depende de acesso/credenciais da conta Vercel
 
 ## Uso pessoal 100% gratuito e independente
 
