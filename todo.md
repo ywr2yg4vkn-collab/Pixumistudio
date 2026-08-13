@@ -361,3 +361,12 @@
 - [x] Remover a necessidade de chamadas tRPC e credenciais no modo estático
 - [x] Validar build e testes do modo offline-first
 - [x] Publicar a versão estática no GitHub e orientar a importação na Vercel
+
+## Linha de produção offline com nove etapas
+
+- [x] Reintegrar o painel visual das nove etapas de produção
+- [x] Persistir etapa atual, aprovação e observações no projeto local
+- [x] Mostrar conteúdos específicos para direção, matriz, pixel art, mockups, validação, engenharia, produção e controle final
+- [x] Permitir avanço sequencial e retorno para revisão sem backend
+- [x] Conectar o estado das etapas à matriz editável e ao PDF técnico
+- [x] Validar visualmente o fluxo completo e publicar a revisão no GitHub
