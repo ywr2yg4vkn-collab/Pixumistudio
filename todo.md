@@ -309,3 +309,10 @@
 - [x] Documentar banco, APIs, storage, OAuth e limites operacionais para publicação externa
 - [x] Executar build, TypeScript, testes e validação do entrypoint serverless
 - [x] Gerar pacote final otimizado para Vercel
+
+## Publicação no GitHub
+
+- [x] Verificar o repositório remoto `pixumistudio` e a branch padrão
+- [x] Preparar uma cópia limpa do projeto sem segredos, dependências instaladas, builds ou logs
+- [x] Publicar o código completo e a configuração Vercel no GitHub
+- [x] Validar o commit e entregar o link do repositório
