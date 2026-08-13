@@ -6,6 +6,8 @@ Este projeto foi adaptado para ser publicado como um frontend Vite servido pela 
 
 ## Publicação rápida
 
+A matriz completa e atualizada das variáveis está em [`ENVIRONMENT_VARIABLES.md`](./ENVIRONMENT_VARIABLES.md). O projeto não inclui um `.env.example` versionado; isso é intencional para evitar que uma cópia de configuração seja confundida com credenciais funcionais.
+
 Na Vercel, importe este repositório ou faça o upload do pacote. Deixe o diretório raiz como a raiz do projeto. A configuração `vercel.json` já define o comando `pnpm build`, o diretório `dist/public`, a função `api/[...path].ts` e a duração máxima de cinco minutos. No plano Hobby, cinco minutos é o limite máximo documentado para uma função; em planos superiores, outros limites podem estar disponíveis [2].
 
 Depois de criar o projeto, abra **Settings → Environment Variables** e adicione as variáveis da tabela abaixo para **Production**, **Preview** e **Development** conforme a necessidade. Não coloque valores secretos em arquivos versionados.
