@@ -316,3 +316,37 @@
 - [x] Preparar uma cópia limpa do projeto sem segredos, dependências instaladas, builds ou logs
 - [x] Publicar o código completo e a configuração Vercel no GitHub
 - [x] Validar o commit e entregar o link do repositório
+
+## Auditoria final para Vercel e revisão pelo Manus
+
+- [x] Auditar as variáveis de ambiente usadas pelo código atual
+- [x] Confirmar se a documentação de ambiente cobre todas as variáveis e exemplos sem segredos
+- [x] Mapear serviços externos e pré-requisitos do primeiro deploy
+- [x] Verificar prontidão da configuração Vercel e pontos de intervenção manual
+- [x] Corrigir documentação divergente e validar build/testes
+- [x] Entregar relatório final de revisão para o Manus
+
+## Deploy Vercel sem dependência do repositório Manus
+
+- [ ] Verificar se há acesso configurado à conta/projeto Vercel
+- [ ] Confirmar quais etapas de deploy podem ser automatizadas sem segredos no GitHub
+- [ ] Preparar configuração pública e scripts de exportação sem credenciais
+- [ ] Solicitar dados/credenciais indispensáveis por canal seguro, se necessário
+- [ ] Validar deploy independente ou documentar o bloqueio externo
+
+## Uso pessoal 100% gratuito e independente
+
+- [ ] Mapear dependências proprietárias do Manus que impedem o custo zero
+- [ ] Definir substitutos gratuitos para hospedagem, banco, autenticação, IA e storage
+- [ ] Desacoplar autenticação, IA e storage proprietários do fluxo principal
+- [ ] Validar limites de uso pessoal, build e testes da arquitetura gratuita
+- [ ] Documentar a configuração gratuita e publicar a versão independente
+
+## Implementação confirmada: modo pessoal gratuito independente
+
+- [x] Substituir o login Manus por autenticação de usuário único
+- [x] Substituir o cliente Forge por adaptador Gemini compatível com o pipeline atual
+- [x] Substituir o storage Manus por adaptador Cloudflare R2/S3
+- [x] Migrar upload, leitura de referência e análise visual para os novos adaptadores
+- [x] Adicionar variáveis gratuitas, documentação e testes de regressão
+- [ ] Validar build, testes e publicar a versão independente no GitHub

@@ -1,7 +1,9 @@
 import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
+import { clearPersonalSession, isPersonalAuthConfigured } from "./_core/personalAuth";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
+import { invokeGemini } from "./_core/gemini";
 import { invokeLLM } from "./_core/llm";
 import { storageGetSignedUrl, storagePut } from "./storage";
 import { getDb, getProject, getProjectWorkspace, listProjects } from "./db";
@@ -51,7 +53,9 @@ export function parseOutput(content: unknown) {
 async function invokeWithRetry(messages: Parameters<typeof invokeLLM>[0]["messages"]) {
   let lastError: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {
-    try { return await invokeLLM({ messages }); } catch (error) { lastError = error; if (attempt < 2) await new Promise(resolve => setTimeout(resolve, 400 * (attempt + 1))); }
+    try {
+      return process.env.GEMINI_API_KEY ? await invokeGemini({ messages }) : await invokeLLM({ messages });
+    } catch (error) { lastError = error; if (attempt < 2) await new Promise(resolve => setTimeout(resolve, 400 * (attempt + 1))); }
   }
   throw lastError instanceof Error ? lastError : new Error("Falha transitória ao chamar o agente.");
 }
@@ -75,7 +79,7 @@ export const appRouter = router({
   system: systemRouter,
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
-    logout: publicProcedure.mutation(({ ctx }) => { const cookieOptions = getSessionCookieOptions(ctx.req); ctx.res.clearCookie(COOKIE_NAME, { ...cookieOptions, maxAge: -1 }); return { success: true } as const; }),
+    logout: publicProcedure.mutation(({ ctx }) => { const cookieOptions = getSessionCookieOptions(ctx.req); ctx.res.clearCookie(COOKIE_NAME, { ...cookieOptions, maxAge: -1 }); if (isPersonalAuthConfigured()) clearPersonalSession(ctx.req, ctx.res); return { success: true } as const; }),
   }),
   projects: router({
     list: protectedProcedure.query(({ ctx }) => listProjects(ctx.user.id)),
