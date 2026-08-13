@@ -349,4 +349,4 @@
 - [x] Substituir o storage Manus por adaptador Cloudflare R2/S3
 - [x] Migrar upload, leitura de referência e análise visual para os novos adaptadores
 - [x] Adicionar variáveis gratuitas, documentação e testes de regressão
-- [ ] Validar build, testes e publicar a versão independente no GitHub
+- [x] Validar build, testes e publicar a versão independente no GitHub
