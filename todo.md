@@ -350,3 +350,14 @@
 - [x] Migrar upload, leitura de referência e análise visual para os novos adaptadores
 - [x] Adicionar variáveis gratuitas, documentação e testes de regressão
 - [x] Validar build, testes e publicar a versão independente no GitHub
+
+## Modo offline-first sem configuração
+
+- [ ] Separar o núcleo de processamento local da infraestrutura server-side
+- [ ] Implementar geração de matriz no navegador com a paleta fixa de 48 cores
+- [ ] Implementar persistência local de projetos e referências
+- [ ] Adaptar edição da matriz e catálogo para funcionamento sem login
+- [ ] Implementar exportação do molde técnico diretamente no navegador
+- [ ] Remover a necessidade de chamadas tRPC e credenciais no modo estático
+- [ ] Validar build e testes do modo offline-first
+- [ ] Publicar a versão estática no GitHub e orientar a importação na Vercel
